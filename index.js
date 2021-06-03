@@ -93,10 +93,71 @@ function Circle(radius) {
 const another = new Circle(1);
 circle.draw(); //display content from 1st function
 another.draw(); //display content from this function
-*/
+
 
 var person = {
     name: 'John',
     age: 50
 };
 alert(person.name + " is " + person.age)
+*/
+
+//Class 
+/*
+class Car {
+    constructor(name, year) {
+        this.name = name;
+        this.year = year;
+    }
+    age(x) {
+        return x - this.year;
+    }
+}
+
+let date = new Date();
+let year = date.getFullYear();
+
+let myCar = new Car("Ford", 2014);
+
+console.log("My car is " + myCar.age(year) + " years old.");
+
+//JavaScript Callbacks  %%%  Asynchronous JavaScript(SetTimeOut)
+
+function myDisplayer(some) {
+    console.log(some);
+}
+
+function myFirst() {
+    myDisplayer("Hello");
+}
+
+function mySecond() {
+    myDisplayer("Goodbye");
+}
+
+setTimeout(mySecond, 10000);
+
+
+myFirst();
+
+
+
+//Set Interval()
+setInterval(myFunction, 1000);
+
+function myFunction() {
+    let d = new Date();
+    console.log(d.getHours() + ":" +
+        d.getMinutes() + ":" +
+        d.getSeconds());
+}
+
+//alert("Time is out");
+
+
+function mySecond() {
+    alert("Time is out");
+}
+setTimeout(mySecond, 10000);
+
+*/
