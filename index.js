@@ -160,4 +160,19 @@ function mySecond() {
 }
 setTimeout(mySecond, 10000);
 
+
+function fetchData() {
+    fetch('https://jsonplaceholder.typicode.com/users').then(response => {
+        return response.json();
+
+    }).then(data => {
+        console.log(data);
+    }).catch(error => {
+        console.log(error);
+    });
+}
+document.getElementById("demo").innerHTML = fetchData();
+
+console.log(fetchData());
+
 */
